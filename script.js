@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const email = document.getElementById('email').value;
 
         // Replace this URL with your actual Azure Logic App HTTP trigger endpoint
-        const azureLogicAppEndpoint = 'YOUR_AZURE_LOGIC_APP_ENDPOINT_HERE';
+        const azureLogicAppEndpoint = 'https://prod-05.northeurope.logic.azure.com:443/workflows/71afe60c6bc940ec92b2ace4f992660a/triggers/When_a_HTTP_request_is_received/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2FWhen_a_HTTP_request_is_received%2Frun&sv=1.0&sig=eo6R7Vf2lJzxW7ARn8vUqXmOi4Ps2eLqOIDsYijxB5Y';
 
         fetch(azureLogicAppEndpoint, {
             method: 'POST',
