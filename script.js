@@ -26,11 +26,6 @@ document.addEventListener('DOMContentLoaded', function() {
             messageDiv.textContent = 'Successfully subscribed to the newsletter!';
             messageDiv.style.color = 'green';
             form.reset();
-        })
-        .catch(error => {
-            messageDiv.textContent = 'Failed to subscribe. Please try again later.';
-            messageDiv.style.color = 'red';
-            console.error('Error:', error);
         });
     });
 });
